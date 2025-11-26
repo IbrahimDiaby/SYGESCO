@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  text-decoration: none;
+  text-transform: none;
+  outline: none;
+  transition: all 0.4s 0s ease-in-out;
+  border: 0;
+}
+
+*:hover {
+  cursor: pointer;
+}
+
+:root {
+  --primary: #009a44;
+  --secondary: #f39200;
+  --favicon-icon1: 16px;
+  --favicon-icon2: 24px;
+  --lang-icon: 30px;
+  --radius: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100dvh;
+  max-width: 100dvw;
+}
+
+header,
+footer {
+  width: 100%;
+  min-height: 60px;
+}
+
+header {
+  display: flex;
+  padding: 0rem 25px;
+  align-items: center;
+  justify-content: normal;
+  background-color: var(--primary);
+}
+
+main {
+  padding: 2rem 25px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  padding: 1rem 25px;
+  /* flex-direction: column; */
+  /* align-items: center;
+    justify-content: center; */
+}
+
+.profil-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 0px 1.2rem;
+}
+
+.profil-picture {
+  background-color: white;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 500px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px 4px;
+}
+
+.search-input-container :nth-child(3) {
+  color: red;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex: 3;
+}
+
+.search-container input {
+  padding: 0.5rem 4px;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+}
+
+.tech-container {
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  display: flex;
+  height: 300px;
+  background-color: var(--primary);
+  width: 100%;
+  flex: 1 0 30%;
+  padding: 1rem;
+}
+
+.divider {
+  margin: 1rem 0px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+.card:hover {
+  background-color: var(--secondary);
+}
+
+.card-content {
+  color: white;
+}
+
+.title {
+  padding: 0px 0px 1rem 0px;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--secondary);
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+}
+
+.btn.btn-add:hover {
+  box-shadow: 1px 1px 1px #e4e4e4;
+  transform: scale(1.1);
+}
+
+.tech-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: normal;
+  color: white;
+}
+
+.tech-infos-text {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.tech-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.tech-link {
+  cursor: pointer;
+}
+
+.tech-logo-container {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: var(--radius);
+}
+
+.tech-logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+div.btn {
+  background-color: white;
+  color: black;
+}
+
+div.btn i {
+  color: black;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 0px;
+  }
+  nav {
+    padding: 0.5rem 0rem;
+    flex-direction: column;
+    gap: 0rem 2rem;
+  }
+
+  .profil-container {
+    order: 1;
+  }
+
+  .search-container {
+    order: 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-input-container {
+    margin: 0.25rem 0px;
+    padding: 4px;
+    width: 94%;
+  }
+
+  main {
+    padding: 1rem 0.5rem;
+  }
+
+  .title {
+    padding: 0px 0px 0.25rem 0px;
+  }
+
+  .card {
+    flex: 1 0 50%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+    padding: 0px;
+  }
+  nav {
+    padding: 0.5rem 0rem;
+    flex-direction: column;
+    gap: 0rem 2rem;
+  }
+
+  .profil-container {
+    order: 1;
+  }
+
+  .search-container {
+    order: 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-input-container {
+    margin: 0.25rem 0px;
+    padding: 4px;
+    width: 94%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
