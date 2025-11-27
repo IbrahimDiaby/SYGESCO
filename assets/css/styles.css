@@ -62,6 +62,16 @@ nav {
   padding: 1rem 25px;
 }
 
+p.errorMsg {
+  color: red;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+
 .profil-container {
   display: flex;
   align-items: center;
@@ -107,6 +117,10 @@ nav {
   width: 100%;
 }
 
+.search-container input::-webkit-input-placeholder {
+  color: white;
+}
+
 .tech-container {
   padding: 5px 0px;
   display: flex;
@@ -124,6 +138,7 @@ nav {
   background-color: var(--primary);
   width: 100%;
   flex: 1 0 30%;
+  max-width: 30%;
   padding: 1rem;
 }
 
@@ -256,6 +271,7 @@ footer {
 
   .card {
     flex: 1 0 50%;
+    max-width: 50%;
   }
 }
 
