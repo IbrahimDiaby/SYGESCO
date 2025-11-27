@@ -201,7 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   search.addEventListener("keyup", (e) => {
     search.setAttribute("value", e.target.value);
-    console.log(e.target.value, search.value)
     searchCancel.style.display = search.value.length === 0 ? "none" : "block";
 
     const filters = (e.target.value.toString().length > 0) ? technologies.filter(el => el.title.toLowerCase().includes(e.target.value.toString().toLowerCase())) : technologies;
